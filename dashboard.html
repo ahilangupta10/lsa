@@ -1053,9 +1053,15 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
     <div class="auth-error" id="apiKeyError"></div>
     <button class="auth-submit" onclick="submitApiKey()" style="margin-top:.8rem">Save Key →</button>
-    <p style="text-align:center;font-size:.78rem;color:var(--muted);margin-top:.9rem">
-      Get a free key at <strong>console.groq.com</strong> → API Keys → Create key
-    </p>
+    <div style="text-align:center;margin-top:.9rem">
+      <p style="font-size:.78rem;color:var(--muted);margin:0 0 .5rem">Don't have a key yet? Get one free in 30 seconds:</p>
+      <a href="https://console.groq.com/keys" target="_blank" rel="noopener"
+        style="display:inline-flex;align-items:center;gap:.4rem;padding:.45rem 1rem;border-radius:8px;background:#f4f4f5;color:#18181b;font-size:.82rem;font-weight:600;text-decoration:none;border:1px solid #e4e4e7;transition:background .15s"
+        onmouseover="this.style.background='#e4e4e7'" onmouseout="this.style.background='#f4f4f5'">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+        Get free API key on Groq
+      </a>
+    </div>
   </div>
 </div>
 </body>
